@@ -1,0 +1,26 @@
+{
+    "contents": [
+        {
+            "url": "cover.html",
+			"title": "Cover",
+			"hidden": true
+        }, 
+        {
+            "url": "toc.html",
+			"title": "TOC",
+			"hidden": true
+        }, 
+        {
+            "url": "article-1.html",
+			"title": "Down the rabbit-hole",
+	        "thumb": "img/White_rabbit_thumb.jpeg",
+	        "byline": "Lewis Carroll"
+        }, 
+        {
+            "url": "article-2.html",
+			"title": "A 2",
+	        "thumb": "img/alice-in-front-of-rabbit-hole_thumb.jpeg",
+	        "byline": "Lewis Carroll"
+        }
+    ]
+}

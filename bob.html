@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+
+
+	<body>
+		
+		<div class="chrome">
+			<div class="viewer">
+
+			</div>
+			<div class="pagenumbers">
+				<span data-ts-template="position">{{pagenumber}} / {{pagecount}}</span>
+			</div>
+			<div class="controls">
+				<!-- div class="pagewidth" -->
+					<span class="pagenumbers">
+						<!-- Treesaver 0.9.2>
+						<span data-bind="pagenumber">1</span> /
+						<span data-bind="pagecount">5</span>
+						<=========================== -->
+						<!-- Treesaver 0.10.0 -->
+						<span data-ts-template="position">{{pagenumber}} / {{pagecount}}</span>
+					</span>
+					<!-- Twitter -->
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{$url$}}">Tweet</a>
+					<!-- end -->
+					<!-- LinkedIn -->
+					<!-- <div class="linked-in"> -->
+						<span class="linked-in">
+							<script type="IN/Share" data-url="http://localhost/~naoufal/treesaver/tut1/article-1.html" data-counter="right"></script>
+						</span>
+					<!-- </div> -->
+					<!-- end -->
+					<!-- FaceBook like button -->
+					<div class="fb-like" data-href="http://localhost/~naoufal/treesaver/tut1/cover.html" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+					<!-- end -->
+                    <!-- a href="cover.html"><button class="home" data-href="cover.html">Home</button></a -->
+					<button class="prev">Previous</button>
+					<button class="next">Next</button>
+					<!-- /div -->
+					
+				<!-- =================== Menues =========================== -->
+				
+					<div class="menu">
+			            <button>Menu</button>
+			            <ul>
+			              <li><a href="http://www.treesaver.net/">About treesaver</a></li>
+			              <li data-ts-template="position"><a href="http://twitter.com/?status={{$url$}}" target="_blank">Tweet this!</a></li>
+			              <li><a href="toc.html">Table of contents</a></li>
+			              <li><a href="#" class="nextArticle">Next article</a></li>
+			              <li><a href="#" class="prevArticle">Previous article</a></li>
+			            </ul>
+						
+					</div>
+					<!-- /div -->
+
+			</div>
+			<!-- =================== Side bare ========================= -->
+			<!--
+			<div class="sidebar sidebar-left">
+				This is the left side bar. You can close it by clicking on the close button or by clicking anywhere in the article. Clicking in the sidebar itself should not close it.
+				<iframe src="demo_iframe.html" width="200" height="200"></iframe>
+				<button class="open-sidebar">Open left</button>
+				<button class="close-sidebar">Close</button>
+			</div>
+
+			<div class="sidebar sidebar-right">
+				<div class="content">
+					This is the right side bar. Note that even though this sidebar is on the right, there are no predefined sidebar locations in Treesaver. You can position sidebars anywhere and style them as you please.
+				</div>
+				<button class="open-sidebar">Open right</button>
+				<button class="close-sidebar">Close</button>
+			</div>
+			-->
+			<div class="sidebar">
+		        <div class="toc" data-ts-template="index">
+		          {{#contents}}
+		            {{^hidden}}
+		              <div class="article">
+		                <img class="thumb" src="{{thumb}}"/>
+		                <h3><a href="{{url}}">{{title}}</a></h3>
+		                <p class="byline">{{byline}}</p>
+		              </div>
+		            {{/hidden}}
+		          {{/contents}}
+		        </div>
+		        <div class="sidebar-controls">
+		          <!-- button class="open-sidebar">Open</button -->
+		          <button class="toggle-sidebar">Toggle</button>
+		          <!-- button class="close-sidebar">Close</button -->
+		        </div>
+			</div>
+			
+			
+		</div>
+
+		
+        <!--========================== COVER ==========================-->
+        <!--div class="grid fixed w1col cover onlypage">
+            <div class="column"></div>
+        </div>
+
+        <div class="grid fixed w1col cover onlypage">
+            <div class="container img fixed r3x4 w1col fill nocap" data-sizes="small-single-3x4"></div>
+            <div class="column"></div>
+        </div-->
+
+        <div class="grid w1col cover">
+            <div class="column"></div>
+        </div>
+
+        <div class="grid w1col cover">
+            <div class="container n1col" data-sizes="title double"></div>
+            <div class="column"></div>
+        </div>
+
+        <!--div class="grid fixed w2col r3x4 cover onlypage">
+            <div class="container img fixed r3x4 w2col fill nocap" data-sizes="small-single-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w3col r3x4 cover onlypage">
+            <div class="container img fixed w3col r3x4 fill nocap" data-sizes="mobile-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w4col r3x4 cover onlypage">
+            <div class="container img fixed w4col r3x4 fill nocap" data-sizes="small-double-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w5col r3x4 cover onlypage">
+            <div class="container img fixed w5col r3x4 fill nocap" data-sizes="double-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w6col r3x4 cover onlypage">
+            <div class="container img fixed w6col r3x4 fill nocap" data-sizes="double-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w7col r3x4 cover onlypage">
+            <div class="container img fixed w7col r3x4 fill nocap" data-sizes="triple-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w8col r3x4 cover onlypage">
+            <div class="container img fixed w8col r3x4 fill nocap" data-sizes="triple-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w9col r3x4 cover onlypage">
+            <div class="container img fixed w9col r3x4 fill nocap" data-sizes="triple-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w10col r3x4 cover onlypage">
+            <div class="container img fixed w10col r3x4 fill nocap" data-sizes="quad-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w11col r3x4 cover onlypage">
+            <div class="container img fixed w11col r3x4 fill nocap" data-sizes="quad-3x4"></div>
+            <div class="column hidden"></div>
+        </div>
+
+        <div class="grid fixed w12col r3x4 cover onlypage">
+            <div class="container img fixed w12col r3x4 fill nocap" data-sizes="quad-3x4"></div>
+            <div class="column hidden"></div>
+        </div-->
+
+        <!-- ============ TOC ======== -->
+        <div class="grid w1cols-1 toc">
+            <div class="column col-1"></div>
+        </div>
+
+
+        <!-- ============ Article-1 ======== -->
+        <div class="grid w1cols-1 chap1">
+            <div class="column col-1"></div>
+        </div>
+
+        <div class="grid w1cols-1 chap1">
+			<div class="container col-1" data-sizes="title single"></div>
+            <div class="column col-1"></div>
+		</div>
+		
+		<div class="grid w1cols-2 chap1 no-page-1">
+			<div class="container w1cols-2" data-sizes="title double"></div>
+			<div class="column col-1"></div>
+			<div class="container col-2" data-sizes="single"></div>
+			<div class="column col-2"></div>
+		</div>
+		
+		<div class="grid w1cols-3 chap1 no-page-1">
+			<div class="container w1cols-3" data-sizes="title"></div>
+			<div class="column col-1"></div>
+			<div class="container col-2 w1cols-2" data-sizes="double"></div>
+			<!-- Special container for video -->
+			<div class="container col-2 w1cols-1" data-sizes="video"></div>
+			<!-- ==================================== -->
+			<div class="column col-2"></div>
+			<div class="container col-3" data-sizes="single"></div>
+			<div class="column col-3"></div>
+		</div>
+
+        <!-- ============ Article-2 ======== -->
+
+        <div class="grid w2cols-1 chap2">
+            <div class="column col-1"></div>
+        </div>
+
+        <div class="grid w2cols-1 chap2">
+            <div class="container col-1" data-sizes="title single"></div>
+            <div class="column col-1"></div>
+        </div>
+
+        <div class="grid wcols-2 chap2">
+            <div class="container wcols-2" data-sizes="title double"></div>
+            <div class="column col-1"></div>
+            <div class="container col-2" data-sizes="title single" ></div>
+			<!-- Special container for video -->
+			<div class="container col-2" data-sizes="video" ></div>
+			<!-- ============================ -->
+            <div class="column col-2"></div>
+        </div>
+
+        <!--div class="grid w2cols-3 chap2">
+            <div class="container w2cols-3" data-sizes="title"></div>
+            <div class="column col-1"></div>
+            <div class="container col-2 wcols-2" data-sizes="double"></div>
+            <div class="column col-2"></div>
+            <div class="container col-3" data-sizes="single"></div>
+            <div class="column col-3"></div>
+        </div-->
+		
+		<!-- ============ Grid: col_2_1_2_b ======== -->
+
+		        <div class="grid w2cols-1 col_2_1_2_b page-2">
+		            <div class="column col-1"></div>
+		        </div>
+
+		        <div class="grid w2cols-1 col_2_1_2_b page-2">
+		            <div class="container col-1" data-sizes="title single"></div>
+		            <div class="column col-1"></div>
+		        </div>
+
+		        <div class="grid wcols-2 col_2_1_2_b no-page-2">
+		            <div class="container wcols-2" data-sizes="title double"></div>
+		            <div class="column col-1"></div>
+		            <div class="container col-2" data-sizes="single"></div>
+		            <div class="column col-2"></div>
+		        </div>
+
+		        <!--div class="grid w2cols-3 chap2">
+		            <div class="container w2cols-3" data-sizes="title"></div>
+		            <div class="column col-1"></div>
+		            <div class="container col-2 wcols-2" data-sizes="double"></div>
+		            <div class="column col-2"></div>
+		            <div class="container col-3" data-sizes="single"></div>
+		            <div class="column col-3"></div>
+		        </div-->
+
+				
+        <div class="loading">
+			loading
+		</div>
+
+		<div class="error">
+			Error
+		</div>
+		<!-- ===================== Lightbox =================== -->
+		<div class="lightbox">
+			<div class="container"></div>
+		</div>
+	</body>
+</html>
